@@ -1,26 +1,22 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This mobile application was made to a news website call nextseason, and everyone that want contribute with this project or rely on it to made your own app, feel free to download this repo.
 
-## How to use this template
+## A few informations
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+NextSeason APP it is in pt_BR but i believe you can understand easely the logic behind.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+The Api was made in C# but you can do in any language that you prefer.
+You can check in my repositories the link to clone the api and base on it.
 
-### With the Ionic CLI:
+This was my first project at all, and you can think tha something was made wrong, so feel free to send me a message or make a merge request with the solution.
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+The app it is not ready yet.
+
+I aprecciate you interest and sorry for my english.
+
+### How to use
+
+You just need clone this repository and run the command below:
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
+$ npm install
 ```
-
-Then, to run it, cd into `mySideMenu` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
