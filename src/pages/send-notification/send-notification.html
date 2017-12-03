@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="home">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enviar Notificação</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label stacked>Titulo</ion-label>
+    <ion-input #title type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Mensagem</ion-label>
+    <ion-textarea #message type="text"></ion-textarea>
+  </ion-item>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Topico</ion-label>
+      <ion-select [(ngModel)]="topic">
+        <ion-option value="games">Games</ion-option>
+        <ion-option value="cinema">Cinema</ion-option>
+        <ion-option value="series">Series de TV</ion-option>
+        <ion-option value="all">Todos</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <button margin-top ion-button full large (click)="send(title.value, message.value)">enviar</button>
+
+
+
+</ion-content>

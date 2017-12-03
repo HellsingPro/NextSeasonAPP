@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="{{category}}">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{post.category}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <img class="img-header" src={{post.link_imagem}} alt="">
+    <div class="title-news">
+      <span>{{post.post_title}}</span>
+    </div>
+  </div>
+
+  <ion-row align-items-center class="line-bar">
+    <ion-col col-3>
+      <div class="line"></div>
+    </ion-col>
+    <ion-col col-6 text-center>
+      <span class="bar-author">Por </span>
+      <span class="bar-author-name">{{post.author}}</span>
+    </ion-col>
+    <ion-col col-3>
+      <div class="line"></div>
+    </ion-col>
+  </ion-row>
+
+  <div class="share-post">
+    <img src="assets/img/social-media-icon/wp.png" alt="WhatsApp" (click)="shareWp()">
+    <img src="assets/img/social-media-icon/fb.png" alt="Facebook" (click)="shareFb()">
+    <img src="assets/img/social-media-icon/insta.png" alt="Instagram" (click)="shareInsta()">
+    <img src="assets/img/social-media-icon/tt.png" alt="Twitter" (click)="shareTt()">
+  </div>
+
+  <div class="content" padding [innerHtml]="post.post_content | safe: 'html'"> </div>
+</ion-content>

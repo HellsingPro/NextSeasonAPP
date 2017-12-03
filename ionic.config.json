@@ -1,0 +1,8 @@
+{
+  "name": "NSAPP",
+  "app_id": "f0aa9ebb",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
